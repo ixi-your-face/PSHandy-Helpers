@@ -6,5 +6,5 @@ function Import-JSONFile {
 
     [String]$JSONContents = (Get-Content $JSONPath)
 
-    Return (Convert-FromJSON $JSONContents)
+    Return (ConvertFrom-JSON $JSONContents)
 }
